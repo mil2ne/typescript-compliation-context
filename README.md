@@ -41,4 +41,17 @@ npm install --save-dev @tsconfig/deno
     - 설정 안하면 4가지(node_modules, bower_components, jspm_packages, \<outDir>)를 default 로 제외합니다.
     - \<outDir> 은 항상 제외합니다. (include 에 있어도)
 
+## compileOptions : type
+### @types
+- TypeScript 2.0 부터 사용 가능해진 내장 type definition 시스템
+- 아무 설정을 안하면 ?
+  - `node_modules/@types` 라는 모든 경로를 찾아서 사용
+- typeRoots 를 사용하면 ?
+  - typeRoots 를 사용하면 ?
+- types 를 사용하면 ?
+  - 배열 안의 모듈 혹은 `./node_modules/@types/` 안의 모듈 이름에서 찾아옵니다.
+  - [] 빈 배열을 넣는다는건 이 시스템을 이용하지 않겠다는 것입니다.
+- typeRoots 와 types 를 같이 사용하지 않습니다
+
+
 

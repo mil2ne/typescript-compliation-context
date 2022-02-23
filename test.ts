@@ -1,1 +1,1 @@
-// const a: number = undefined; // error 확인, strict extends 확인
+import React from "react" // npm i --save-dev @types/react
