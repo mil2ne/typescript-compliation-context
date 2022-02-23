@@ -27,5 +27,18 @@ npm install --save-dev @tsconfig/deno
 }
 ```
 
+## files, include, exclude
+- 셋다 설정이 없으면, 전부다 컴파일
+- files
+  - 상대 혹은 절대 경로의 리스트 배열입니다.
+  - exclude 보다 쎕니다.
+- include, exclude
+  - glob 패턴 (마치 .gitignore)
+  - include
+    - exclude 보다 약합니다.
+    - \* 같은걸 사용하면, .ts / .tsx / .d.ts 만 include (.js 등은 allowJS 켜야함)
+  - exclude
+    - 설정 안하면 4가지(node_modules, bower_components, jspm_packages, \<outDir>)를 default 로 제외합니다.
+    - \<outDir> 은 항상 제외합니다. (include 에 있어도)
 
 
