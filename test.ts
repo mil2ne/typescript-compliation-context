@@ -1,1 +1,3 @@
-import React from "react" // npm i --save-dev @types/react
+const hello = () => {
+  console.log("hello");
+};

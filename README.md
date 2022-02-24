@@ -53,5 +53,16 @@ npm install --save-dev @tsconfig/deno
   - [] 빈 배열을 넣는다는건 이 시스템을 이용하지 않겠다는 것입니다.
 - typeRoots 와 types 를 같이 사용하지 않습니다
 
+### target
+- 빌드의 결과물을 어떤 버전으로 할 것이냐
+- 지정을 안하면 es3 입니다.
 
+### lib
+- 기본 type definition 라이브러리를 어떤 것을 사용할 것이냐
+- lib 를 지정하지 않을 때
+  - target 이 'es3' 이고, 디폴트로 lib.d.ts 를 사용합니다.
+  - target 이 'es5' 이면, 디폴트로 dom, es5, scripthost 를 사용합니다.
+  - target 이 'es6' 이면, 디폴트로 dom, es6, dom.iterable, scripthost 를 사용합니다.
+- lib 를 지정하면 그 lib 배열로만 라이브러리를 사용하니다.
+  - 빈 [] => 'no definition found 어쩌구
 
