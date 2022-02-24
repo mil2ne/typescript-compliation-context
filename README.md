@@ -66,3 +66,11 @@ npm install --save-dev @tsconfig/deno
 - lib 를 지정하면 그 lib 배열로만 라이브러리를 사용하니다.
   - 빈 [] => 'no definition found 어쩌구
 
+### compileOptions : strict
+- `--noImplicitAny`
+- `--noImplicitThis`
+- `--strictNullChecks`
+- `--strictFunctionTypes`
+- `--strictPropertyInitialization`
+- `--strictBindCallApply`
+- `--alwaysStrict`
